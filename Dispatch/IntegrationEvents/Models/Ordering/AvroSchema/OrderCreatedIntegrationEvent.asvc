@@ -1,0 +1,35 @@
+{
+  "type": "record",
+  "name": "OrderCreatedIntegrationEvent",
+  "namespace": "Ordering.AvroSchema",
+  "fields": [
+    {
+      "name": "OrderId",
+      "type": "int"
+    },
+    {
+      "name": "Products",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "Product",
+          "fields": [
+            {
+              "name": "ProductName",
+              "type": "string"
+            },
+            {
+              "name": "Quantity",
+              "type": "int"
+            },
+            {
+              "name": "UnitPrice",
+              "type": "double"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

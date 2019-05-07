@@ -1,0 +1,11 @@
+﻿{"namespace": "Producer.AvroSchema",
+ "type": "record",
+ "name": "UserCreatedIntegrationEvent",
+ "fields": [
+     {"name": "UserId", "type": "int"},
+     {"name": "FirstName",  "type": "string"},
+     {"name": "LastName", "type": "string"},
+	 {"name": "FullName","type": "string"},
+	 {"name": "Age", "type": "int"}
+ ]
+}

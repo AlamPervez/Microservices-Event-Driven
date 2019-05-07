@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "InvoiceProcessedIntegrationEvent",
+  "namespace": "Invoicing.AvroSchema",
+  "fields": [
+    {
+      "name": "InvoiceId",
+      "type": "int"
+    },
+    {
+      "name": "OrderId",
+      "type": "int"
+    },
+    {
+      "name": "InvoiceAmount",
+      "type": "double"
+    }
+  ]
+}
